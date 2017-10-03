@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>Paulo França Filho - Web Designer & Front-End</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="css/grid.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+	<link href="https://fonts.googleapis.com/css?family=Kalam:400,700|Roboto:900" rel="stylesheet">
+
+	<!-- Google CDN jQuery -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+	<!-- Page Scroll to id plugin -->
+	<script src="js/jquery.malihu.PageScroll2id.js"></script>
+	
+	<script>
+		(function($){
+			$(window).load(function(){
+				
+				/* Page Scroll to id fn call */
+				$(".nav-menu a,a[href='#top'],a[rel='m_PageScroll2id']").mPageScroll2id({
+					highlightSelector:".nav-menu a"
+				});
+				
+				/* demo functions */
+				$("a[rel='next']").click(function(e){
+					e.preventDefault();
+					var to=$(this).parent().parent("section").next().attr("class");
+					$.mPageScroll2id("scrollTo",to);
+				});
+				
+			});
+		})(jQuery);
+	</script>
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+	<!-- MENU -->
+	<header class="linha-completa header">
+		<nav class="linha-grid nav-menu">
+			<ul>
+				<li><a href="#section-1" title="Home">Home</a></li>
+				<li><a href="#section-2" title="Sobre mim">Sobre mim</a></li>
+				<li><a href="#section-3" title="Portfólio">Portfólio</a></li>
+				<li><a href="#section-4" title="Contato">Contato</a></li>
+			</ul>
+		</nav>
+	</header>
+	<!-- MENU -->
+	
+	<!-- HOME -->
+	<section id="section-1" class="linha-grid home">
+		<figure class="coluna col-7">
+			<img src="images/img-paulo-franca.jpg" alt="Paulo França Filho - Designer & Front-End" />
+		</figure>
+
+		<div class="coluna col-5 apresentacao">
+			<h1>Paulo França Filho</h1>
+			<h2>Designer & Front-End</h2>
+
+			<div class="tags">
+				<p class="line1">&lt;HTML&gt;&lt;HEAD&gt;&lt;TITLE&gt;&lt;/TITLE&gt;</p>
+				<p class="line2">&lt;SCRIPT&gt;&lt;/SCRIPT&gt;&lt;STYLE&gt;&lt;/STYLE&gt;</p>
+				<p class="line3">&lt;/HEAD&gt;&lt;BODY&gt;&lt;/BODY&gt;&lt;/HTML&gt;</p>
+				<p class="line4">W3C HTML HTML5 CSS CSS3</p>
+				<p class="line5">Photoshop Illustrator Premiere After Effects</p>
+				<p class="line6">Web Design Responsive Mobile</p>
+				<p class="line1">&lt;HTML&gt;&lt;HEAD&gt;&lt;TITLE&gt;&lt;/TITLE&gt;</p>
+				<p class="line2">&lt;SCRIPT&gt;&lt;/SCRIPT&gt;&lt;STYLE&gt;&lt;/STYLE&gt;</p>
+				<p class="line3">&lt;/HEAD&gt;&lt;BODY&gt;&lt;/BODY&gt;&lt;/HTML&gt;</p>
+				<p class="line4">W3C HTML HTML5 CSS CSS3</p>
+				<p class="line5">Photoshop Illustrator Premiere After Effects</p>
+				<p class="line6">Web Design Responsive Mobile</p>
+			</div>
+
+			<p>Bem vindo ao meu portfólio, sou Web Designer e atuo na aréa de criação, desenvolvimento e soluções para a web. Fico a disposição para novos trabalhos, projetos e oportunidades que se enquadrem em meu perfil e capacidade, entre em contato para mais informações.</p>
+		</div>
+	</section>
+	<!-- HOME -->
+	
+	<!-- BACKGROUND -->
+	<figure class="linha-grid bg-up">
+		<img src="images/bg-up.gif" />
+	</figure>
+	<!-- BACKGROUND -->
+	
+	<!-- SOBRE -->
+	<section id="section-2" class="linha-grid sobre">
+		<article class="coluna col-12">
+			<h3 class="coluna col-6">Sobre mim</h3>
+
+			<figure>
+				<img src="images/img-paulo.png" alt="Paulo França Filho - Designer & Developer" />
+			</figure>
+			
+			<div class="coluna col-6">			
+				<h4>
+					Paulo França Filho
+					<span>Web Designer - Front-End</span>
+				</h4>
+				<p>Trabalha há 6 anos com criação e desenvolvimento de websites, voltado para a área de Front-End.</p>
+				<p>Em sua trajetória trabalhou como Desenvolvedor HTML ao lado da marca <span>HSBC</span> por quase dois anos pela <span>JWT Brasil/Agência CASA</span> e por três anos como Web Designer na Editora <span>Gazeta Do Povo</span>.</p>
+				<p>Formação: Tecnólogo em produção Multimídia pela Faculdade OPET.</p>
+			</div>
+			
+			<section class="linha">
+				<div class="coluna col-12 experiencia">
+					<h4><span>Experiência</span></h4>
+					<div class="coluna col-6">
+						<dl>
+							<dt>Agência OMX</dt>
+							<dd>Web Designer - Dezembro 2010/Junho 2012</dd>
+							<dt>Agência Casa/JWT Brasil</dt>
+							<dd>Desenvolvedor HTML JR. - Agosto 2012/Maio 2014</dd>
+							<dt>GRPCOM/Gazeta Do Povo</dt>
+							<dd>Web Designer Jr. - Junho 2014/Agosto 2017</dd>
+						</dl>
+					</div>
+					<div class="coluna col-3 conhecimentos-ferramentas">
+						<h5>Conhecimentos:</h5>
+						<ul>
+							<li class="e5">Html</li>
+							<li class="e4">Html5</li>
+							<li class="e5">Css</li>
+							<li class="e4">Css3</li>
+							<li class="e3">Sass</li>
+							<li class="e2">Jquery</li>
+							<li class="e2">Php</li>
+							<li class="e3">Jsp</li>
+							<li class="e2">Git/Svn</li>
+							<li class="e3">Edição de Vídeo</li>
+						</ul>
+					</div>
+					<div class="coluna col-3 conhecimentos-ferramentas">
+						<h5>Ferramentas:</h5>
+						<ul>
+							<li class="e4">Photoshop</li>
+							<li class="e2">Illustrator</li>
+							<li class="e3">Premiere</li>
+							<li class="e1">After Effects</li>
+							<li class="e4">Sublime Text</li>
+							<li class="e3">Wordpress</li>
+							<li class="e2">Koala</li>
+							<li class="e2">GitKraken</li>
+							<li class="e2">TortoiseSvn</li>
+							<li class="e3">Xamp/Wamp</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</article>		
+	</section>
+	<!-- SOBRE -->
+
+	<!-- BACKGROUND -->
+		<figure class="linha-grid bg-words">
+			<img src="images/bg-keywords.gif" />
+		</figure>
+	<!-- BACKGROUND -->
+
+	<!-- PORTFOLIO -->
+	<section id="section-3" class="linha-grid portfolio">
+		<h3>Portfólio</h3>
+
+		<p>Em atualização :(</p>
+	</section>
+	<!-- PORTFOLIO -->
+
+	<!-- PORTFOLIO -->
+	<section id="section-4" class="linha-grid contato">
+		<h3>Contato</h3>
+		<div class="coluna col-6">
+			<ul>
+				<li>Paulo França Filho</li>
+				<li>E-mail: <a href="mailto:paulinhoxweb@gmail.com">paulinhoxweb@gmail.com</a></li>
+				<li>Curitiba-PR</li>
+			</ul>
+			
+			<p>Entre em contato pelo e-mail acima ou se preferir pelas redes sociais ao lado que retornarei o mais rápido possível. =)</p>	
+		</div>
+		<div class="coluna col-6 redes-sociais">
+			<p>Redes Sociais:</p>
+			<ul>
+				<li>
+					<a href="https://www.linkedin.com/in/paulofrancafilho/" title="Linkedin" target="_blank">
+						<img src="images/icon-linkedin.png" />
+						<span>Linkedin</span>
+					</a>
+				</li>
+				<li>
+					<a href="https://www.facebook.com/xpaulinhox" title="Facebook" target="_blank">
+						<img src="images/icon-facebook.png" />
+						<span>Facebook</span>
+					</a>
+				</li>
+				<li>
+					<a href="https://twitter.com/paulinhoxkeep" title="Linkedin" target="_blank">
+						<img src="images/icon-twitter.png" />
+						<span>Twitter</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<!-- PORTFOLIO -->
+	
+	
+</body>
+</html>
+	
